@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coding Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dar">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="./index.html">Coding Site</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Technology</a></li>
+                            <li><a class="dropdown-item" href="#">Web Development</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Support us</a></li>
+                            <li><a class="dropdown-item" href="#">Contact us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled Section</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Login
+                    </button>
+                    <button type=" button" class="btn btn-outline-danger" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">Signup</button>
+                </div>
+            </div>
+    </nav>
+
+
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModalLabel">Login To Coding Site</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signupModalLabel">Get An Account</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div>
+                            <label for="exampleInputPassword1">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/1.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2><strong>Welcome To Coding Site</strong></h2>
+                    <p><b>Technology News And Development</b></p>
+                    <button class="btn btn-secondary">Technology</button>
+                    <button class="btn btn-success">Web Dev</button>
+                    <button class="btn btn-danger">Mobile App</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2><strong>The Best Coding Site</strong></h2>
+                    <p><b>Technology News And Development</b></p>
+                    <button class="btn btn-secondary">Technology</button>
+                    <button class="btn btn-success">Web Dev</button>
+                    <button class="btn btn-danger">Mobile App</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/3.avif" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2><strong>Amazing</strong></h2>
+                    <p><b>Technology News And Development</b></p>
+                    <button class="btn btn-secondary">Technology</button>
+                    <button class="btn btn-success">Web Dev</button>
+                    <button class="btn btn-danger">Mobile App</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container mt-4">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary-emphasis">Development</strong>
+                        <h3 class="mb-0">Learn Development</h3>
+                        <div class="mb-1 text-body-secondary">Nov 12</div>
+                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                            lead-in to additional content.</p>
+                        <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                            Continue reading
+                            <svg class="bi">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <div class="col-auto d-none d-lg-block">
+                            <img src="./images/5.avif" alt="" class="bd-placeholder-img" width="200" height="250">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
+                        <h3 class="mb-0">Learn Design</h3>
+                        <div class="mb-1 text-body-secondary">Nov 11</div>
+                        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
+                            additional content.</p>
+                        <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                            Continue reading
+                            <svg class="bi">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+                        </a>
+
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="./Images/4.jpg" alt="" class="bd-placeholder-img" width="200" height="250">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-warning-emphasis">Artificial Intelligence</strong>
+                        <h3 class="mb-0">Learn AI</h3>
+                        <div class="mb-1 text-body-success">Nov 12</div>
+                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                            lead-in to additional content.</p>
+                        <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                            Continue reading
+                            <svg class="bi">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="./images/6.avif" alt="" class="bd-placeholder-img" width="200" height="250">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-secondary-emphasis">Templates</strong>
+                        <h3 class="mb-0">Bootstrap</h3>
+                        <div class="mb-1 text-body-primary">Nov 11</div>
+                        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
+                            additional content.</p>
+                        <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                            Continue reading
+                            <svg class="bi">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="./images/7.avif" alt="" class="bd-placeholder-img" width="200" height="250">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container-fluid">
+            <h1 class="abc">Random Coding Site</h1>
+            <p class="def">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem delectus mollitia porro natus
+                debitis
+                incidunt molestiae id quia iste quis, iure quos fugiat modi ab ipsum quas nisi ut? Placeat!
+                Maiores placeat possimus consequatur nihil quibusdam praesentium qui tenetur necessitatibus cupiditate
+                vitae! Veritatis ipsum dolor cum ipsa sunt nulla maiores. Neque, incidunt facilis? Quia alias, possimus
+                quae explicabo optio voluptas.
+                Illo adipisci neque, dolorem quidem veniam, sed quam alias mollitia aut, magnam voluptatum nesciunt
+                fugit quia eveniet sint ratione sunt nam at autem reiciendis harum vel cupiditate quod accusamus.
+                Veritatis.
+                Earum error libero sed beatae nobis, quam velit architecto ex culpa, dicta nisi sit, eius iste tempore
+                tempora! Aut eius alias doloremque modi repellendus blanditiis perferendis perspiciatis sunt nesciunt
+                optio?
+                Numquam, quam nesciunt! Rem, provident! Odit a at voluptates velit eaque blanditiis laborum, corporis
+                voluptate dolores autem architecto quam ipsum et dicta consequuntur nam, animi distinctio debitis
+                tempore iure pariatur?
+                Et officia culpa distinctio alias delectus fugit, eos animi molestias magni excepturi modi deserunt
+                quasi cum ducimus dolorum similique quia nisi vitae perspiciatis error placeat! Tempora reprehenderit
+                unde neque exercitationem.
+                Pariatur iusto reiciendis cum neque, dolores, tenetur vitae, culpa similique veniam nostrum harum
+                doloremque laborum dolorum vel voluptas. Id illum deleniti voluptatem ad, amet perferendis provident
+                magni. Quo, eligendi consectetur.
+                Est temporibus illo odit eum repudiandae culpa maiores, cumque corrupti autem odio dolor consectetur a
+                ducimus quasi consequatur quam expedita doloremque possimus porro voluptatum. Placeat alias ullam magni
+                consequatur nobis.
+                Omnis voluptatibus eveniet impedit, maiores nesciunt veritatis nobis facilis quo rerum debitis excepturi
+                repudiandae quas magnam repellat hic similique perferendis saepe facere odit, veniam eligendi? Ducimus
+                ad eaque voluptates illum?
+                Non est voluptatum maiores? Sapiente qui natus quos corrupti dicta quisquam repellat a eum iste
+                distinctio. Possimus, cumque corporis, a est temporibus totam aliquid ea omnis voluptate obcaecati
+                maiores vel?
+                Laborum ullam maxime, officia nostrum assumenda ex repellendus odit similique quia vitae aut eveniet
+                perferendis earum eius culpa veniam facere? Provident, perspiciatis omnis! Quis in neque distinctio
+                voluptate, nihil ipsum.
+                Maxime rem, dolorum laboriosam voluptates nulla necessitatibus odit voluptatum alias sed! Expedita earum
+                adipisci facilis nostrum optio aliquam tenetur, qui itaque quasi quae eligendi reiciendis doloribus
+                quaerat dolorum temporibus aperiam.
+                Quas veniam hic quasi ipsam, culpa minima officia neque eos temporibus modi architecto iusto pariatur,
+                nemo, deserunt optio praesentium. Expedita quae magnam libero provident rerum odit mollitia ex
+                aspernatur ut.
+                Adipisci, itaque iure! Corporis ullam sapiente fuga dolorum ad quaerat doloribus, aspernatur porro quos,
+                dolore quia esse. Aperiam quia cum accusamus, nulla earum sed repellendus soluta quod, qui, suscipit ut!
+                Eius vel veniam, pariatur dolorem hic suscipit rem libero nam, nisi facilis harum maiores officiis esse
+                a nostrum id aspernatur? Deserunt accusamus veniam voluptatem assumenda minima asperiores dicta
+                blanditiis labore?
+                Ea ab voluptates repellendus aperiam ipsam similique necessitatibus reiciendis debitis, nihil, tempora
+                facere qui, vel ullam? Aliquid ad, quod aliquam, dolore labore cumque neque esse quo itaque in dolorum
+                est.
+                Voluptas at esse dignissimos, ipsam earum natus delectus, ex ipsa ratione sapiente minima dolorem autem?
+                Labore, aut rerum sunt, quae error vero nobis, perspiciatis autem voluptate ad repellat fuga minima!
+                Officiis maiores, consectetur ad tempora recusandae doloribus nam commodi vero labore ullam ut, dolorum
+                necessitatibus molestias possimus. Officiis itaque consequatur aut quibusdam officia. Fuga provident
+                reprehenderit aperiam corporis, libero est.
+                Voluptas sapiente quibusdam temporibus iure molestias blanditiis vero dolores unde praesentium, quos non
+                neque. Fugit libero nulla tempora totam earum ad saepe eveniet perspiciatis deleniti quae! Veniam ullam
+                corporis vel.
+                Praesentium officia recusandae nesciunt nemo. Possimus consequuntur enim quisquam dignissimos hic autem
+                inventore aspernatur molestiae error, cum quibusdam debitis ducimus quis distinctio sunt tempore fuga.
+                Fugit laborum aliquam optio officiis.</p>
+        </div>
+        <footer class="bg-dark text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-3 text-white" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2020 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+
+</body>
+</head>
+
+</html>
